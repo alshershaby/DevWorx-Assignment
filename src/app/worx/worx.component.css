@@ -1,0 +1,53 @@
+h3 {
+  text-align: center;
+  font-size: 24px;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.users-container {
+  width: 100%;
+}
+.user-box {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border: solid 2px #ddd;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
+  margin: 40px auto;
+  position: relative;
+  object-fit: contain;
+}
+
+.user-image {
+  height: 100%;
+  overflow: hidden;
+  border: solid 2px #ddd;
+}
+img {
+  width: 100%;
+}
+
+.user-info {
+  position: absolute;
+  left: 110%;
+  top: 0;
+  padding: 20px;
+  width: 200px;
+  border: #ddd solid 1px;
+  border-radius: 5px;
+  box-shadow: 4px 5px #ddd;
+  display: none;
+  transition: display 0.3s ease-in-out;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+}
+
+.user-info li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+.user-box:hover .user-info {
+  display: flex;
+}

@@ -1,0 +1,20 @@
+
+
+    <h3>users info</h3>
+
+<div  *ngFor="let user of users"  class="users-container">
+    <div  class="user-box">
+      <div  class="user-image">
+
+          <img  [src]="user.imagePath" alt="">
+   
+    </div>
+    <ul class="user-info">
+        <li> Name :{{user.name}}</li>
+        <li> Code: {{user.code}}</li>
+    </ul>
+   
+
+</div>
+    
+</div>
